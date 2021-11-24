@@ -17,7 +17,7 @@ const Hello: NextPage = () => {
         <p className={styles.description}>
           <Link href='./login'>即刻登录 </Link>
         </p>
-        <Button onClick={() => console.log(process.env.TEST)}>
+        <Button onClick={() => console.log(process.env.NEXT_PUBLIC_TEST)}>
           print test
         </Button>
 
