@@ -2,8 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import { Button } from 'antd';
 const Hello: NextPage = () => {
-  console.log(process.env.TEST);
   return (
     <div className={styles.container}>
       <Head>
@@ -17,6 +17,9 @@ const Hello: NextPage = () => {
         <p className={styles.description}>
           <Link href='./login'>即刻登录 </Link>
         </p>
+        <Button onClick={() => console.log(process.env.TEST)}>
+          print test
+        </Button>
 
         <div className={styles.grid}></div>
       </main>
